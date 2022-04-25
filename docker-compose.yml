@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  service1:
+    build:
+      context: .
+      target: service1
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+  service2:
+    build:
+      context: .
+      target: service2
+      dockerfile: Dockerfile
+    ports:
+      - 3001:3001
+  service3:
+    build:
+      context: .
+      target: service3
+      dockerfile: Dockerfile
+    ports:
+      - 3002:3002
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+      - 9411:9411

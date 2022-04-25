@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "service1": "sh start_service1.sh",
-    "service2": "sh start_service2.sh"
+    "service2": "sh start_service2.sh",
+    "service:all": "node service1.js && node service2.js &&node service3.js"
   },
   "repository": {
     "type": "git",
